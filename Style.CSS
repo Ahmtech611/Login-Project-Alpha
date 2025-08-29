@@ -85,7 +85,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: url("Y-flat-design-forest-landscape_23-2149155031.avif");
+    background-image: url("W-images/Y-flat-design-forest-landscape_23-2149155031.avif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -100,6 +100,20 @@ body{
     backdrop-filter: blur(19px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     border-radius: 1.8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .login-close-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 5.1vh;
+    width: 5.1vh;
+    background-color: #162938;
+    font-size: 2em;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
