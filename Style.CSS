@@ -31,10 +31,10 @@ header{
 .navigation a{
     position: relative;
     text-decoration: none;
-    color: #ffffff;
-    font-size: 1.1em;
+    color: #ff6868;
+    font-size: 1.21em;
     margin-left: 3.4vw;
-    font-weight: 600;
+    font-weight: 650;
 }
 
 .navigation a::after {
@@ -103,20 +103,55 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform 0.5s ease, height .3s ease;
+}
+
+.wrapper.activePopUp{
+    transform: scale(1);
+}
+
+.wrapper .login-Box-Form{
+    transition: transform 0.2s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active{
+    height: 70vh;
+}
+
+.wrapper .login-Box-Register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .login-Box-Register{
+    transition: transform 0.2s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .login-Box-Form{
+    transition: none;
+    transform: translateX(-400px);
 }
 
 .wrapper .login-close-icon{
     position: absolute;
     top: 0;
     right: 0;
-    height: 5.1vh;
-    width: 5.1vh;
+    height: 5.4vh;
+    width: 5.4vh;
     background-color: #162938;
-    font-size: 2em;
+    font-size: 1.2em;
     color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom-left-radius: 2.2vh;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .wrapper.login-Box-Form{
@@ -125,6 +160,12 @@ body{
 }
 
 .wrapper .login-Box-Form h2{
+    font-size: 2em;
+    color: #162938;
+    text-align: center;
+}
+
+.wrapper .login-Box-Register h2{
     font-size: 2em;
     color: #162938;
     text-align: center;
@@ -227,4 +268,5 @@ body{
 .login-register p a:hover{
     text-decoration: underline;
 }
+
 
